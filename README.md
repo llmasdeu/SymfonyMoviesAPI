@@ -5,9 +5,9 @@ Simple movies API written with Symfony 5.
 
 In order to execute this project, there are some changes needed to be made, detailed here:
 
-1. You need to set the database parameters. To do so, go to the file .env, and modify the following line: `DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7"`. The package used for the dependencies allows other database engines, such as SQLite or PostgreSQL. However, this project has been tested with MySQL.
+1. We need to set the database parameters. To do so, go to the file `.env, and modify the following line: `DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7"`. The package used for the dependencies allows other database engines, such as SQLite or PostgreSQL. However, this project has been tested with MySQL.
 
-2. In the project's folder, you'll need to create the database. For that, we'll execute the command `bin/console doctrine:database:create`.
+2. In the project's folder, we'll need to create the database. For that, we'll execute the command `bin/console doctrine:database:create`.
 
 3. Now we need to export the written entities as the schema for the database. We'll need to execute the command `bin/console make:migration`. Having executed it, a prompt will appear requesting us if we want to continue. We need to write 'yes'.
 
