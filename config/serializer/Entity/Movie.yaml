@@ -1,0 +1,13 @@
+App\Entity\Movie:
+  attributes:
+    id:
+      groups: ['movie']
+
+    title:
+      groups: ['movie']
+
+    director:
+      groups: ['movie']
+
+    year:
+      groups: ['movie']

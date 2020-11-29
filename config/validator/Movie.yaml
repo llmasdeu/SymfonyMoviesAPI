@@ -1,0 +1,26 @@
+App\Entity\Movie:
+  properties:
+    title:
+      - NotBlank: ~
+      - Length:
+          min: 2
+          max: 255
+          minMessage: 'The title must be at least {{ limit }} characters long'
+          maxMessage: 'The title cannot be longer than {{ limit }} characters'
+          allowEmptyString: false
+    director:
+      - NotBlank: ~
+      - Length:
+          min: 2
+          max: 255
+          minMessage: 'The director must be at least {{ limit }} characters long'
+          maxMessage: 'The director cannot be longer than {{ limit }} characters'
+          allowEmptyString: false
+    year:
+      - NotBlank: ~
+      - Length:
+          min: 2
+          max: 4
+          minMessage: 'The year must be at least {{ limit }} characters long'
+          maxMessage: 'The year cannot be longer than {{ limit }} characters'
+          allowEmptyString: false
